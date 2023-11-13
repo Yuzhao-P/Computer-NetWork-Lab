@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        2110756_彭钰钊的网页
+    </title>
+</head>
+</html>
+
+<body>
+    {% load static %}
+    <center>
+    <h1>
+        Lab2 超简单网页
+    </h1>
+    <p>
+        <b>姓名：</b>彭钰钊
+    </p>
+    <p>
+        <b>学号：</b>2110756
+    </p>
+    <p>
+        <b>专业：</b>计算机科学与技术
+    </p>
+    
+    <img src="{% static 'images/mylogo.jpg' %}" height="400" width="280">
+    <p>
+        <b>👆 LOGO & 音频 👇</b>
+    </p>
+    <audio controls="controls">
+        <source src="{% static 'audio/self-introduction.mp3' %}" type="audio/mp3"></source>
+    </audio>
+    </center>
+</body>
